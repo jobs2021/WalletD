@@ -1,0 +1,58 @@
+/* Menu Styles - MaxiWallet */
+
+.transition-card {
+  transition: all 0.3s ease;
+}
+
+.transition-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.18) !important;
+}
+
+.bg-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*NOTA: Cambio de colores y formas entre grises y verdes */
+.section-gradient {
+  background: linear-gradient(35deg, #67e2ca 50%, #80c7bb 50%, #d3d3d3 100%);
+}
+
+.saldo-section {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.saldo-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0.5rem 1.5rem rgba(16, 230, 9, 0.3);
+}
+
+/* Welcome Card Gradient */
+.welcome-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Saldo Amount */
+.saldo-amount {
+  color: #1abc9c;
+  font-size: 2.5rem;
+}
+
+/* Icon Size */
+.icon-large {
+  font-size: 3rem;
+}

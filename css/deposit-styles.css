@@ -1,0 +1,366 @@
+/* ================================
+   ESTILOS DEPOSIT PAGE - MAXIWALLET
+   ================================ */
+
+/* DEPOSIT SECTION */
+.deposit-section {
+    background: linear-gradient(35deg, #67e2ca 50%, #80c7bb 50%, #d3d3d3 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* DEPOSIT CARD */
+.deposit-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(16, 185, 129, 0.2);
+    overflow: hidden;
+    border: 1px solid rgba(16, 185, 129, 0.1);
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* HEADER */
+.deposit-header {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.deposit-header .logo-container {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2.5rem;
+    backdrop-filter: blur(10px);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    }
+}
+
+.deposit-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.deposit-header p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* BODY */
+.deposit-body {
+    padding: 2.5rem 2rem;
+}
+
+/* FORM STYLING */
+.form-label {
+    color: #059669;
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+}
+
+.form-label i {
+    margin-right: 0.5rem;
+}
+
+.input-group {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.input-group-text {
+    border: none;
+    background: #f9fafb !important;
+}
+
+.form-control,
+.form-select {
+    border: none;
+    padding: 0.75rem 0.75rem;
+    font-size: 1rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    border: none;
+    color: #374151;
+}
+
+.form-control::placeholder {
+    color: #d1d5db;
+}
+
+.form-select {
+    border-radius: 10px;
+    border: 2px solid #e5e7eb !important;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #10b981 !important;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1) !important;
+}
+
+/* CHECKBOX */
+.form-check-input {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-color: #10b981;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-check-input:checked {
+    background-color: #10b981;
+    border-color: #10b981;
+}
+
+.form-check-input:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 0.2rem rgba(16, 185, 129, 0.25);
+}
+
+.form-check-label {
+    color: #374151;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+/* BUTTON */
+.btn-success {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+}
+
+.btn-success:active {
+    transform: translateY(0);
+}
+
+.btn-success i {
+    margin-right: 0.5rem;
+}
+
+/* LINKS */
+a.text-success {
+    transition: all 0.3s ease;
+}
+
+a.text-success:hover {
+    color: #059669 !important;
+    text-decoration: underline !important;
+}
+
+/* INFO CARDS */
+.info-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #10b981;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.15);
+}
+
+.info-card i {
+    font-size: 2rem;
+    color: #10b981;
+}
+
+/* FOOTER FULL WIDTH */
+.footer-full-width {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 3rem 0;
+    margin-top: 3rem;
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%) !important;
+    border-top: 3px solid #10b981;
+}
+
+.footer-full-width .container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer-full-width .row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-full-width h5 {
+    color: #10b981;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-full-width p {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.footer-full-width .text-muted {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.footer-full-width a {
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-full-width a:hover {
+    color: #10b981 !important;
+    transform: translateY(-3px) scale(1.1);
+}
+
+.footer-full-width hr {
+    opacity: 0.3;
+    margin: 2rem 0 !important;
+}
+
+.footer-full-width .text-center {
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 480px) {
+    .deposit-header {
+        padding: 2rem 1.5rem;
+    }
+
+    .deposit-header .logo-container {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    .deposit-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .deposit-body {
+        padding: 1.5rem 1rem;
+    }
+
+    .form-label {
+        font-size: 0.85rem;
+    }
+
+    .form-control,
+    .form-select {
+        padding: 0.6rem 0.5rem;
+    }
+
+    .btn-success {
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .info-card {
+        margin-bottom: 1rem;
+    }
+
+    .row.mt-5 {
+        margin-top: 1rem !important;
+    }
+
+    /* FOOTER RESPONSIVO MÓVIL */
+    .footer-full-width {
+        padding: 2rem 0;
+        margin-top: 2rem;
+    }
+
+    .footer-full-width h5 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-full-width p {
+        font-size: 0.85rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .footer-full-width a {
+        font-size: 1.1rem;
+    }
+
+    .footer-full-width .gap-3 {
+        gap: 1rem !important;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .deposit-header {
+        padding: 2.5rem 2rem;
+    }
+
+    .deposit-header .logo-container {
+        width: 70px;
+        height: 70px;
+        font-size: 2.2rem;
+    }
+
+    .deposit-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .deposit-body {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* MIN-VH-100 RESPONSIVO */
+@media (max-width: 768px) {
+    .min-vh-100 {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+}

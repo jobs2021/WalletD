@@ -1,0 +1,208 @@
+/* ================================
+   ESTILOS SENDMONEY PAGE - MAXIWALLET
+   ================================ */
+
+/* Autocomplete Styles */
+.ui-autocomplete {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.ui-autocomplete .ui-menu-item {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.ui-autocomplete .ui-menu-item:hover,
+.ui-autocomplete .ui-state-hover {
+  background-color: #e8f5e9;
+  color: #10b981;
+  font-weight: 500;
+}
+
+.ui-autocomplete .ui-menu-item-wrapper {
+  padding: 8px 12px;
+}
+
+/* Modal para agregar contacto */
+.modal-content {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  border-radius: 15px 15px 0 0;
+}
+
+.modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+/* Nota: muestra el formato de alertas, se cambia por problemas con el formato de alertas */
+.alert-container {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  /*Nota: muestra la profundidad de las alertas */
+  z-index: 1050;
+  max-width: 600px;
+  width: 90%;
+}
+
+.alert-top {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  animation: slideDownAlert 0.4s ease-out;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  font-weight: 500;
+}
+
+.alert-top.alert-success {
+  background-color: #d1fae5;
+  color: #065f46;
+  border-left: 4px solid #10b981;
+}
+
+.alert-top.alert-danger {
+    
+  background-color: #fee2e2;
+  color: #7f1d1d;
+  border-left: 4px solid #ef4444;
+
+}
+
+.alert-top.alert-info {
+  background-color: #dbeafe;
+  color: #0c2d6b;
+  border-left: 4px solid #3b82f6;
+}
+
+.alert-top .btn-close {
+  padding: 0;
+  opacity: 0.7;
+}
+
+.alert-top .btn-close:hover {
+  opacity: 1;
+}
+
+@keyframes slideDownAlert {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Estilos para bordes esmeralda en campos */
+.border-emerald {
+  border: 2px solid #10b981 !important;
+  transition: all 0.3s ease;
+}
+
+.border-emerald:focus {
+  border-color: #059669 !important;
+  box-shadow: 0 0 0 0.2rem rgba(16, 185, 129, 0.25) !important;
+}
+
+.border-emerald:hover {
+  border-color: #059669 !important;
+}
+
+/* Transaction History Table */
+.table-hover tbody tr:hover {
+  background-color: #f0f9f7;
+  cursor: pointer;
+}
+
+.table th {
+  background-color: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+
+/* Badge Styles */
+.badge {
+  font-size: 12px;
+  padding: 6px 12px;
+  font-weight: 500;
+}
+
+/* Send Button Hover Effect */
+#sendBtn {
+  transition: all 0.3s ease;
+}
+
+#sendBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+}
+
+/* Add Contact Button */
+#addContactBtn {
+  transition: all 0.3s ease;
+}
+
+#addContactBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+/* Form Validation */
+.form-control.is-invalid,
+.form-control:invalid {
+  border-color: #dc3545;
+}
+
+.form-control.is-valid,
+.form-control:valid {
+  border-color: #28a745;
+}
+
+/* Alert Messages */
+.alert-custom {
+  border-radius: 10px;
+  border: none;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ui-autocomplete {
+    max-height: 150px;
+  }
+
+  .table {
+    font-size: 12px;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px 4px;
+  }
+}

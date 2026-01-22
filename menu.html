@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaxiWallet - Menú Principal</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/menu-styles.css">
+</head>
+
+<body class="bg-light">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="menu.html">
+        <i class="bi bi-wallet2"></i> MaxiWallet
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">
+              <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN SECTION -->
+  <section class="py-5 section-gradient">
+    <div class="container">
+      <!-- Welcome Card -->
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="card bg-gradient border-0 shadow-lg welcome-card">
+            <div class="card-body text-white p-5">
+              <h1 class="card-title fw-bold mb-3">
+                <i class="bi bi-hand-thumbs-up"></i> MENÚ PRINCIPAL Maxiwallet 
+              </h1>
+              <p class="card-text fs-5 text-black">
+                El poder de gestionar todo, donde quieras.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SALDO SECTION -->
+      <div class="bg-secondary py-4 rounded mb-5 saldo-section">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="text-muted mb-2 fs-5">Tu saldo disponible</p>
+            <h2 class="fw-bold saldo-amount">$2,450.50</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Options -->
+      <div class="row g-4">
+        <!-- Depositar -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm transition-card">
+            <div class="card-body text-center py-5">
+              <div class="mb-4">
+                <i class="bi bi-plus-circle text-success icon-large"></i>
+              </div>
+              <h5 class="card-title fw-bold mb-3">Depositar Dinero</h5>
+              <p class="card-text text-muted mb-4">
+                Añade fondos a tu cuenta de forma segura y rápida
+              </p>
+              <a href="deposit.html" class="btn btn-success">
+                <i class="bi bi-arrow-right"></i> Ir a Depósito
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transferencias -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm transition-card">
+            <div class="card-body text-center py-5">
+              <div class="mb-4">
+                <i class="bi bi-arrow-left-right text-warning icon-large"></i>
+              </div>
+              <h5 class="card-title fw-bold mb-3">Envía dinero</h5>
+              <p class="card-text text-muted mb-4">
+                Transfiere dinero a tus contactos de manera fácil
+              </p>
+              <a href="sendmoney.html" class="btn btn-warning">
+                <i class="bi bi-send"></i> Transferir
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Historial -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm transition-card">
+            <div class="card-body text-center py-5">
+              <div class="mb-4">
+                <i class="bi bi-clock-history text-primary icon-large"></i>
+              </div>
+              <h5 class="card-title fw-bold mb-3">Últimos movimientos</h5>
+              <p class="card-text text-muted mb-4">
+                Consulta tus movimientos y transacciones
+              </p>
+              <a href="transactions.html" class="btn btn-primary">
+                <i class="bi bi-list"></i> Ver Historial
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Configuración -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm transition-card">
+            <div class="card-body text-center py-5">
+              <div class="mb-4">
+                <i class="bi bi-gear text-secondary icon-large"></i>
+              </div>
+              <h5 class="card-title fw-bold mb-3">Configuración</h5>
+              <p class="card-text text-muted mb-4">
+                Ajusta tus preferencias y seguridad
+              </p>
+              <button class="btn btn-secondary">
+                <i class="bi bi-sliders"></i> Configurar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ayuda -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm transition-card">
+            <div class="card-body text-center py-5">
+              <div class="mb-4">
+                <i class="bi bi-question-circle text-danger icon-large"></i>
+              </div>
+              <h5 class="card-title fw-bold mb-3">Ayuda</h5>
+              <p class="card-text text-muted mb-4">
+                Centro de soporte y preguntas frecuentes
+              </p>
+              <button class="btn btn-danger">
+                <i class="bi bi-chat-dots"></i> Obtener Ayuda
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER FULL WIDTH -->
+  <footer class="bg-dark text-white footer-full-width mt-5">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5 class="fw-bold mb-3">
+            <i class="bi bi-wallet2"></i> MaxiWallet
+          </h5>
+          <p class="text-muted">
+            La billetera digital más segura para gestionar tus finanzas.
+          </p>
+        </div>
+
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5 class="fw-bold mb-3">Síguenos</h5>
+          <div class="d-flex gap-3 justify-content-center">
+            <a href="#" class="text-white text-decoration-none">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="text-white text-decoration-none">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="text-white text-decoration-none">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="text-white text-decoration-none">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3">Contacto</h5>
+          <p class="text-muted mb-2">
+            <i class="bi bi-envelope"></i> info@maxiwallet.com
+          </p>
+          <p class="text-muted">
+            <i class="bi bi-telephone"></i> +1 (555) 123-4567
+          </p>
+        </div>
+      </div>
+
+      <hr class="bg-secondary my-4">
+      <div class="text-center">
+        <p class="text-muted mb-0">
+          &copy; 2026 MaxiWallet. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- jQuery UI para efectos -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+  <!-- Menu JS -->
+  <script src="js/menu-script.js"></script>
+</body>
+
+</html>
